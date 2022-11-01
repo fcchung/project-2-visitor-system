@@ -1,7 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
 import session from "express-session";
-
 import router from "./routes/routes.js";
 
 const app = express();
@@ -28,7 +27,7 @@ app.use(
 app.use(router);
 
 app.listen(PORT, () => {
-  console.log("Listening for connections on port ${PORT}");
+  console.log(`Listening for connections on port ${PORT}`);
 });
 
 export default app;
